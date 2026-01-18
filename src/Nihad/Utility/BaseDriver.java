@@ -19,7 +19,7 @@ public class BaseDriver {
 
         js=(JavascriptExecutor) driver;
 
-        //driver.manage().window().maximize(); // ekrani max et
+        driver.manage().window().maximize(); // ekrani max et
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));

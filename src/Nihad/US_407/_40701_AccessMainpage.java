@@ -1,7 +1,6 @@
 package Nihad.US_407;
 
 import Nihad.Utility.BaseDriver;
-import Nihad.Utility.MyFunc;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;

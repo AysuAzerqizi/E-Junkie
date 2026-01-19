@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class US_408 extends BaseDriver {
     @Test
-    public void us408() {
+    public void test408() {
         driver.get("https://shopdemo.fatfreeshop.com/");
         WebElement ecommerce = driver.findElement(By.xpath("//*[@class='EJ-ShopLink']"));
         ecommerce.click();
@@ -22,15 +22,11 @@ public class US_408 extends BaseDriver {
 
         WebElement howitworks = driver.findElement(By.xpath("(//*[@class='blue_btn'])[1]"));
         howitworks.click();
-
         MyFunc.Wait(10);
 
         Actions actions = new Actions(driver);
         WebElement video = driver.findElement(By.xpath("//*[@class='modal-background']"));
         actions.moveToElement(video).click().build().perform();
-        actions.sendKeys(Keys.TAB).build().perform();
-
-        actions.sendKeys(Keys.SPACE).build().perform();
         MyFunc.Wait(10);
         actions.sendKeys(Keys.SPACE).build().perform();
         GozleBagla();
